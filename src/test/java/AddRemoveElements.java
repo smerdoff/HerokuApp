@@ -14,7 +14,6 @@ public class AddRemoveElements {
     public void addElements(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://the-internet.herokuapp.com/add_remove_elements/\n");
         driver.findElement(By.xpath("//*[@onclick= 'addElement()']")).click();
         driver.findElement(By.xpath("//*[@onclick= 'addElement()']")).click();
