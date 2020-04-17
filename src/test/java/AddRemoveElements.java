@@ -38,5 +38,6 @@ public class AddRemoveElements {
         Assert.assertEquals(2, list.size(), "Количество добавленных элементов не совпадает");
         driver.quit();
     }
+
 }
 
