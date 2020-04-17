@@ -11,8 +11,8 @@ import java.util.List;
 
 
 public class Checkboxes {
-    @Test
 
+    @Test
     public void fistCheckboxIsUnchecked(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -21,8 +21,8 @@ public class Checkboxes {
         Assert.assertEquals(false, option1.isSelected(), "Чекбокс№1 выбран");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void fistCheckboxIsChecked(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -32,8 +32,8 @@ public class Checkboxes {
         Assert.assertEquals(true, option1.isSelected(), "Чекбокс№1 не выбран");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void secondCheckboxIsChecked(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -43,8 +43,8 @@ public class Checkboxes {
         Assert.assertEquals(true, option2.isSelected(), "Чекбокс№2 не выбран");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void secondCheckboxIsUnchecked(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();

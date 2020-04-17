@@ -9,8 +9,8 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class DropdownLists {
-    @Test
 
+    @Test
     public void countOfOptions(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -21,8 +21,8 @@ public class DropdownLists {
         Assert.assertEquals(3, options.size(), "Значение первого значения не совпадает с ожидаемым");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void placeholderIsCorrect(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -34,8 +34,8 @@ public class DropdownLists {
         Assert.assertEquals("Please select an option", value, "Значение плэйсхолдера не совпадает с ожидаемым");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void firstOptionIsSelected(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -47,8 +47,8 @@ public class DropdownLists {
         Assert.assertEquals(true,firstoption.isSelected() , "Значение плэйсхолдера не совпадает с ожидаемым");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void secondOptionIsSelected(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -60,6 +60,4 @@ public class DropdownLists {
         Assert.assertEquals(true,secondtoption.isSelected() , "Значение плэйсхолдера не совпадает с ожидаемым");
         driver.quit();
     }
-
-
 }

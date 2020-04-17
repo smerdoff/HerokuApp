@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class Tables {
-        @Test
 
+        @Test
     public void lastNameTest(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -22,8 +22,8 @@ public class Tables {
         Assert.assertEquals(lastnames, "Smith Bach Doe Conway" , "Строки не совпадают");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void firstNameTest(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -36,8 +36,8 @@ public class Tables {
         Assert.assertEquals(firstNames, "John Frank Jason Tim" , "Строки не совпадают");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void emailsTest(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -51,8 +51,8 @@ public class Tables {
         Assert.assertEquals(emails, "jsmith@gmail.com fbach@yahoo.com jdoe@hotmail.com tconway@earthlink.net" , "Строки не совпадают");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void dueTest(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -66,8 +66,8 @@ public class Tables {
         Assert.assertEquals(dues, "$50.00 $51.00 $100.00 $50.00" , "Строки не совпадают");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void webSitesTest(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -81,5 +81,4 @@ public class Tables {
         Assert.assertEquals(dues, "http://www.jsmith.com http://www.frank.com http://www.jdoe.com http://www.timconway.com" , "Строки не совпадают");
         driver.quit();
     }
-
 }

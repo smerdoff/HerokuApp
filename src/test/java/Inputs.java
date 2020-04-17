@@ -10,8 +10,8 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class Inputs {
-    @Test
 
+    @Test
     public void enterCorrectValue(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -22,8 +22,8 @@ public class Inputs {
         Assert.assertEquals("12", currentValue, "Значение первого значения не совпадает с ожидаемым");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void enterIncorrectValue(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -34,8 +34,8 @@ public class Inputs {
         Assert.assertEquals("", currentValue, "Введённое значение не совпадает с ожидаемым");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void increaseValue(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -51,8 +51,8 @@ public class Inputs {
         Assert.assertEquals(expectedValue, currentValue, "Значение первого значения не совпадает с ожидаемым");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void decreaseValue(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();

@@ -9,8 +9,8 @@ import java.util.List;
 
 
 public class AddRemoveElements {
-    @Test
 
+    @Test
     public void addElements(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -22,8 +22,8 @@ public class AddRemoveElements {
         Assert.assertEquals(3, list.size(), "Количество добавленных элементов не совпадает");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void deleteElements(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -38,6 +38,5 @@ public class AddRemoveElements {
         Assert.assertEquals(2, list.size(), "Количество добавленных элементов не совпадает");
         driver.quit();
     }
-
 }
 

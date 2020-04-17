@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class Typos {
-    @Test
 
+    @Test
     public void firstLineIsChecked(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -20,8 +20,8 @@ public class Typos {
         Assert.assertEquals(expectedString,actualString , "Есть ошибка в первой строке");
         driver.quit();
     }
-    @Test
 
+    @Test
     public void secondLineIsChecked(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
