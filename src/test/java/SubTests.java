@@ -2,6 +2,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SubTests extends BaseCalculatorTest {
+
     int i = 1000;
 
     @Test(description = "Проверка вычитания с использованием приоритета", priority = 4)
