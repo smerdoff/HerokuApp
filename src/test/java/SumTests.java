@@ -36,6 +36,4 @@ public class SumTests extends BaseCalculatorTest {
             Assert.fail();
         }
     }
-
-
 }
